@@ -1,0 +1,45 @@
+/* DEFAULT CONTAINER --> edit widths as needed
+____________________________________*/
+.container { width:90%; max-width:110rem; min-width:30rem; margin:auto; }
+
+
+/* GRID --> edit gutter as needed
+____________________________________*/
+
+.grid { display:flex; flex-wrap:nowrap; }
+	.box-full { width:100%; }
+	.box-half { width:50%; }
+	.box-third { width:33.333%; }
+	.box-two-thirds { width:66.66%; }
+	.box-quarter { width:25%; }
+	.box-three-quarters { width:75%; }
+
+.grid.with-gutter { width:calc(100% + 3rem); margin-left:-1.5rem; margin-right:-1.5rem; justify-content: space-around; }
+	.grid.with-gutter > .box-quarter { width:calc(25% - 3rem); }
+	.grid.with-gutter > .box-third { width:calc(33.333% - 3rem); }
+	.grid.with-gutter > .box-two-thirds { width:calc(66.66% - 3rem); }
+	.grid.with-gutter > .box-full { width:calc(100% - 3rem); }
+	.grid.with-gutter > .box-half { width:calc(50% - 3rem); }
+	.grid.with-gutter > .box-three-quarters { width:calc(75% - 3rem); }
+
+
+@media all and (max-width:960px) {
+	.box-third,
+	.box-quarter { width:50%; }
+	.box-two-thirds,
+	.box-three-quarters { width:100%; }
+
+	.grid.with-gutter > .box-third,
+	.grid.with-gutter > .box-quarter,
+	.grid.with-gutter > .box-two-thirds,
+	.grid.with-gutter > .box-three-quarters { width:calc(100% - 3rem); }
+}
+@media all and (max-width:540px) {
+	.box-third,
+	.box-quarter,
+	.box-half  { width:100%; }
+
+	.grid.with-gutter > .box-third,
+	.grid.with-gutter > .box-quarter,
+	.grid.with-gutter > .box-half  { width:calc(100% - 3rem); }
+}
