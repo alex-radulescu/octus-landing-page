@@ -6,7 +6,7 @@ ____________________________________*/
 /* GRID --> edit gutter as needed
 ____________________________________*/
 
-.grid { display:flex; flex-wrap:nowrap; }
+.grid { display:flex; flex-wrap:wrap; }
 	.box-full { width:100%; }
 	.box-half { width:50%; }
 	.box-third { width:33.333%; }
