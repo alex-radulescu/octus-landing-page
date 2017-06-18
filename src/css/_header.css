@@ -1,5 +1,5 @@
 
-.header { border-bottom:.1rem solid #cdcdcd; box-sizing:border-box; visibility:visible; opacity:1; transition:visibility .5s, opacity .5s; position:fixed; top:0; left:0; width:100%; background-color:#fff; }
+.header { border-bottom:.1rem solid #cdcdcd; box-sizing:border-box; visibility:visible; opacity:1; transition:visibility .5s, opacity .5s; position:fixed; top:0; left:0; width:100%; background-color:#fff; z-index:1; }
 .header.is-invisible { visibility:hidden; opacity:0; }
 	.header .container { display:flex; align-items:center; height:8rem; }
 

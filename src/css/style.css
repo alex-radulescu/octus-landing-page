@@ -5,8 +5,10 @@
     --dark-gray:#212121;
 }
 
+@import "fonts";
 @import "base";
 @import "grid";
 @import "header";
 @import "hero";
 @import "section";
+@import "features";

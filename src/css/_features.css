@@ -1,0 +1,17 @@
+.feature-list { background-color:#212121; display:flex; }
+.feature-list-background { width:33.333%; background-position:center; background-attachment:fixed; background-repeat:no-repeat; background-size:cover; background-image:url("../../files/main-bg-min.jpg"); }
+.feature-list-container { width:66.666%; padding:14rem 12rem; }
+	.feature-list .grid { justify-content:space-between; }
+	.feature-item { padding:2.5rem 1rem 1rem 9rem; box-sizing:border-box; position:relative; cursor:pointer; transition:background-color .3s; }
+	.feature-item:hover { background-color:#000; }
+		.feature-icon { position:absolute; font-size:5rem; color:var(--red); top:2.5rem; left:1.5rem; }
+		.feature-title { color:#fff; font-size:1.8rem; margin-bottom:1rem; line-height:1.1; font-family:"Roboto"; font-weight:500; }
+		.feature-text { color:#bdbdbd; font-size:1.4rem; font-family:"Raleway"; margin-bottom:1rem; line-height:1.5; }
+
+@media all and (max-width:1200px) {
+	.feature-list-container { padding:12rem 10rem; }
+}
+@media all and (max-width:1024px) {
+	.feature-list-background { width:25%; }
+	.feature-list-container { width:75%; padding:6rem 4rem; }
+}
