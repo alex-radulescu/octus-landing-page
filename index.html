@@ -31,9 +31,9 @@
             <section class="main-navigation">
                 <nav class="main-navigation-list">
                     <a class="main-navigation-link" href="#about">About</a>
-                    <a class="main-navigation-link" href="#features">Features</a>
+                    <a class="main-navigation-link" href="#feature-list">Features</a>
                     <a class="main-navigation-link" href="#testimonials">Testimonials</a>
-                    <a class="main-navigation-link" href="#goals">Contact</a>
+                    <a class="main-navigation-link" href="#contact">Contact</a>
                 </nav>
             </section>
             <button type="button" class="menu-toggle"></button>
@@ -44,15 +44,19 @@
         <div class="hero-content container">
             <img src="./files/octus-logo-white.png" role="presentation" class="hero-content-image"/>
             <h3 class="rectangular-sub-headline">Singapore / London / Hong Kong</h3>
-            <a href="#" class="strike-sub-headline">Learn More</a>
+            <form action="" class="get-demo-form">
+                <input type="email" class="input-field" placeholder="Your email address"/>
+                <button class="submit-button">Get demo</button>
+                <p class="demo-benefits-text"></p>
+            </form>
         </div>
     </section>
-    <section class="about container" id="about">
-        <h2 class="section-heading">About</h2>
-        <h3 class="section-sub-heading">
+    <section class="section container" id="about">
+        <h2 class="section-heading">Meet octus</h2>
+        <!--<h3 class="section-sub-heading">
             <p class="section-sub-heading-text">Goodness from our company</p>
-        </h3>
-        <h1 class="lead-text">Octus is a smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.</h1>
+        </h3>-->
+        <h1 class="lead-text">Your smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.</h1>
         <div class="grid with-gutter light-feature-list">
             <div class="box-third light-feature-item">
                 <h3 class="light-feature-title">Integrated</h3>
@@ -68,53 +72,53 @@
             </div>
         </div>
     </section>
-    <section class="feature-list" id="feature-list">
-        <div class="feature-list-background"></div>
-        <div class="feature-list-container">
-            <div class="grid">
-                <div class="box-half feature-item">
+    <section class="section is-dark" id="feature-list">
+        <div class="container">
+            <h2 class="section-heading">Features</h2>
+            <div class="grid with-gutter">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-stack"></i>
                     <h3 class="feature-title">Resume Management</h3>
                     <p class="feature-text">Gather the resumes from multiple sources and manage them from a single space. Source, track and hire candidates with ease.
 					</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-tags"></i>
                     <h3 class="feature-title">Track Applicant Status</h3>
                     <p class="feature-text">Our system helps minimise time spent on administrative tasks. Spend less time “managing” the hiring and more time actually hiring and placing candidates.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-search"></i>
                     <h3 class="feature-title">Powerful Search</h3>
                     <p class="feature-text">We use a multitude of search technology to ensure you get the most comprehensive search in the shortest time possible.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-bookmark"></i>
                     <h3 class="feature-title">Resume Parsing</h3>
                     <p class="feature-text">Using one of the best CV parsing technology in the industry we are able to ensure the loading of records is quick and efficient at no extra cost.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-users"></i>
                     <h3 class="feature-title">Candidate Management</h3>
                     <p class="feature-text">Stay updated with the candidates in your database with easy management and search tools within the system.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-stack"></i>
                     <h3 class="feature-title">Job Management</h3>
                     <p class="feature-text">Complete integration with job boards, LinkedIn, Broadbean and other social media platforms ensure that responses come through in real-time. An automated workflow also makes keeping track of the candidate and the notes associated a doddle.
 					</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-dashboard"></i>
                     <h3 class="feature-title">Analytics & Reporting</h3>
                     <p class="feature-text">Octus has a full analytics and reporting suite built in. This enables you to see everything you want in your business, as well as having the ability to create different indicators for different users so regardless of experience everyone feels they are making a difference.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-calendar"></i>
                     <h3 class="feature-title">Email & Calendar Integration</h3>
                     <p class="feature-text">Have it all in one interface. Keep your work place simple and clean, and be able to share and save information on various applications all from our system, seamlessly.</p>
                 </div>
-                <div class="box-half feature-item">
+                <div class="box-third feature-item">
                     <i class="feature-icon icon-support"></i>
                     <h3 class="feature-title">Dedicated Support</h3>
                     <p class="feature-text">An excellent support team dedicated to assist you right from the get go - with migration, customisation and maintenance.</p>
@@ -122,27 +126,29 @@
             </div>
         </div>
     </section>
-    <section class="testimonials container">
-        <h2 class="section-heading">Our clients' opinions</h2>
+
+    <section class="section container" id="testimonials">
+        <h2 class="section-heading">Tried and Trusted</h2>
         <div class="grid with-gutter testimonial-list">
             <div class="box-half testimonial">
-                <h4 class="testimonial-author-position">Space executive</h4>
+                <img src="./files/marek.jpg" alt="" class="testimonial-avatar"/>
+                <h4 class="testimonial-position">Space executive</h4>
                 <p class="testimonial-text">"Octus is game changing software the recruitment market has been crying out for"</p>
                 <h3 class="testimonial-author">
                     <a href="WWW.SPACE-EXEC.COM" class="testimonial-author-link">MAREK DANYLUK / MANAGING DIRECTOR / WWW.SPACE-EXEC.COM</a>
                 </h3>
-                <img src="" alt="" class="testimonial-author-avatar">
             </div>
             <div class="box-half testimonial">
-                <h4 class="testimonial-author-position">BLACKSQUARE</h4>
+                <img src="./files/chris.jpg" alt="" class="testimonial-avatar"/>
+                <h4 class="testimonial-position">BLACKSQUARE</h4>
                 <p class="testimonial-text">"Working with Octus has been refreshing. Octus is in tune to what is needed in today"</p>
                 <h3 class="testimonial-author">
                     <a href="WWW.BLACKSQUARE.CO.COM" class="testimonial-author-link">CHRIS O'BRIEN / MANAGING DIRECTOR / WWW.BLACKSQUARE.CO.COM</a>
                 </h3>
-                <img src="" alt="" class="testimonial-author-avatar">
             </div>
         </div>
     </section>
+
     <section class="contact"></section>
     <footer class="footer"></footer>
 

@@ -23,6 +23,7 @@ class Header extends View {
 	navigate(e) {
 		e.preventDefault();
 		jump(e.target.getAttribute("href"));
+		document.querySelectorAll(".main-navigation-link").forEach(item =>  item.classList.remove("is-active"));
 		e.target.classList.add("is-active");
 	}
 
