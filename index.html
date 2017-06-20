@@ -45,7 +45,7 @@
             <img src="./files/octus-logo-white.png" role="presentation" class="hero-content-image"/>
             <h3 class="rectangular-sub-headline">Singapore / London / Hong Kong</h3>
             <form action="" class="get-demo-form">
-                <input type="email" class="input-field" placeholder="Your email address"/>
+                <input type="email" class="input-field" required placeholder="Your email address"/>
                 <button class="submit-button">Get demo</button>
                 <p class="demo-benefits-text"></p>
             </form>
@@ -53,9 +53,6 @@
     </section>
     <section class="section container" id="about">
         <h2 class="section-heading">Meet octus</h2>
-        <!--<h3 class="section-sub-heading">
-            <p class="section-sub-heading-text">Goodness from our company</p>
-        </h3>-->
         <h1 class="lead-text">Your smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.</h1>
         <div class="grid with-gutter light-feature-list">
             <div class="box-third light-feature-item">
@@ -72,7 +69,8 @@
             </div>
         </div>
     </section>
-    <section class="section is-dark" id="feature-list">
+    <section class="section is-dark feature-list" id="feature-list">
+        <div class="overlay"></div>
         <div class="container">
             <h2 class="section-heading">Features</h2>
             <div class="grid with-gutter">
@@ -149,8 +147,17 @@
         </div>
     </section>
 
-    <section class="contact"></section>
-    <footer class="footer"></footer>
+    <section class="section" id="contact"></section>
+    <footer class="footer section is-dark">
+        <div class="container">
+            <div class="social-media">
+                <a href="#" class="social-media-link icon-linkedin"></a>
+                <a href="#" class="social-media-link icon-twitter"></a>
+                <a href="#" class="social-media-link icon-facebook"></a>
+            </div>
+            <p class="footer-text">© Copyright Octus PTE LTD 2013 - 2016 All rights reserved. octus.com.sg is a trading name of Octus PTE Limited, a company registered in Singapore. Registration number: 201409552D</p>
+        </div>
+    </footer>
 
 	
 	<script src="./dist/scripts/all.js"></script>
