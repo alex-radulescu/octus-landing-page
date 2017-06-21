@@ -14,7 +14,7 @@ class Header extends View {
 		});
 
 		this.onWindowScroll();
-		//this.addListener("click", ".burger-menu", this.toggleMobileMenu.bind(this));
+		this.addListener("click", ".menu-toggle", this.toggleMobileMenu.bind(this));
 		this.addListener("scroll", document, this.onWindowScroll.bind(this));
 		this.addListener("click", ".main-navigation-link", this.navigate.bind(this));
 	}
@@ -34,7 +34,9 @@ class Header extends View {
 				if (document.querySelector('.main-navigation-link.is-active')) {
 					document.querySelector('.main-navigation-link.is-active').classList.remove("is-active");
 				}
-				document.querySelector('.main-navigation-link[href*=' + i + ']').classList.add('is-active');
+				if(document.querySelector('.main-navigation-link[href*=' + i + ']')) {
+					document.querySelector('.main-navigation-link[href*=' + i + ']').classList.add('is-active');
+				}
 			}
 		}
 	}
@@ -42,8 +44,10 @@ class Header extends View {
 	navigate(e) {
 		e.preventDefault();
 		jump(e.target.getAttribute("href"));
-		// document.querySelectorAll(".main-navigation-link").forEach(item =>  item.classList.remove("is-active"));
-		// e.target.classList.add("is-active");
+	}
+
+	toggleMobileMenu() {
+		this.el.classList.toggle("is-menu-open");
 	}
 
 	static init(selector = ".header", base = document.body) {

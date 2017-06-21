@@ -2,12 +2,12 @@
     "name": "Octus",
     "icons": [
         {
-            "src": "/android-chrome-192x192.png?v=Kmb8WONLQo",
+            "src": "/android-chrome-192x192.png?v=kPg6odQB92",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/android-chrome-256x256.png?v=Kmb8WONLQo",
+            "src": "/android-chrome-256x256.png?v=kPg6odQB92",
             "sizes": "256x256",
             "type": "image/png"
         }

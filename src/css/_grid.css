@@ -1,11 +1,11 @@
 /* DEFAULT CONTAINER --> edit widths as needed
 ____________________________________*/
-.container { width:90%; max-width:110rem; min-width:30rem; margin:auto; }
+.container { width:90%; max-width:110rem; min-width:28rem; margin:auto; }
+.container.is-small { max-width:45rem; }
 
 
 /* GRID --> edit gutter as needed
 ____________________________________*/
-
 .grid { display:flex; flex-wrap:wrap; }
 	.box-full { width:100%; }
 	.box-half { width:50%; }
@@ -23,7 +23,7 @@ ____________________________________*/
 	.grid.with-gutter > .box-three-quarters { width:calc(75% - 3rem); }
 
 
-@media all and (max-width:960px) {
+@media all and (max-width:768px) {
 	.box-third,
 	.box-quarter { width:50%; }
 	.box-two-thirds,
