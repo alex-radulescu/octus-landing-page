@@ -1,6 +1,6 @@
 .table { display: table; border-spacing: 0; border: .1rem solid #bfbfbf; margin: auto; border-radius: .3rem; width: 100%; }
 	.table-row { display: table-row; }
-		.table-cell { display: table-cell; border-bottom: .1rem solid #bfbfbf; font-size: 1.6rem; padding: 1.6rem; }
-		.table-cell:first-child { font-size:1.4rem; font-weight:500; vertical-align:middle; text-transform:uppercase; }
+		.table-cell { display: table-cell; border-bottom: .1rem solid #bfbfbf; font-size: 1.6rem; padding: 1.6rem; vertical-align:middle; line-height:1.3; }
+		.table-cell:first-child { font-size:1.4rem; font-weight:500; text-transform:uppercase; }
 		.table-cell:last-child { text-align: right; }
 		.table-row:last-child .table-cell { border-bottom: 0; }

@@ -1,11 +1,4 @@
-﻿:root {
-    --red:#D32F2F;
-    --light-gray:#dfdfdf;
-    --normal-gray:##9E9E9E;
-    --dark-gray:#212121;
-}
-
-@import "fonts";
+﻿@import "fonts";
 @import "base";
 @import "grid";
 @import "header";
@@ -15,3 +8,4 @@
 @import "testimonial";
 @import "table";
 @import "footer";
+@import "modal";

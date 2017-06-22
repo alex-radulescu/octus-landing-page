@@ -1,5 +1,6 @@
 .section { padding:12rem 0; position:relative; }
 .section.is-dark { background-color:#0F2634; }
+.section.is-gray { background-color:#f5f5f5; }
 
 .section.is-dark .overlay { position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(15,38,52,.9); }
 .section .container { position:relative; }
@@ -7,11 +8,11 @@
 	.section-heading { display:block; text-align:center; font-size:2.8rem; font-family:"Raleway", sans-serif; line-height:1.3; font-weight:600; letter-spacing:.4rem; margin-bottom:3.2rem; color:#212121; }
 	.section.is-dark .section-heading { color:#fff; }	
 		.section-sub-heading { text-align:center; margin-bottom:4rem; }
-			.section-sub-heading-text { border-top:.2rem solid var(--red); border-bottom:.2rem solid var(--red); font-size:1.2rem; line-height:3rem; text-transform:uppercase; display:inline-block; letter-spacing:.4rem; font-family:"Raleway", sans-serif, sans-serif; }
+			.section-sub-heading-text { border-top:.2rem solid #D32F2F; font-weight:500; border-bottom:.2rem solid #D32F2F; font-size:1.2rem; line-height:3rem; text-transform:uppercase; display:inline-block; letter-spacing:.4rem; font-family:"Raleway", sans-serif, sans-serif; }
 			.section.is-dark .section-sub-heading-text { color:#fff; }
-		.lead-text { font-size:3.2rem; line-height:1.25; text-transform:uppercase; letter-spacing:.6rem; color:var(--red); font-family:"Raleway", sans-serif; max-width:80rem; width:90%;text-align:center; font-weight:300; margin:6rem auto 7rem auto; }
+		.lead-text { font-size:3.2rem; line-height:1.25; letter-spacing:.1rem; color:#D32F2F; max-width:80rem; width:90%;text-align:center; font-weight:300; margin:6rem auto 7rem auto; }
 
-.demo-section { background-position:center; background-repeat:no-repeat; background-size:cover; background-image:url("../../files/laptops-bg.jpg"); background-attachment:fixed; }
+.demo-section { background-position:center; background-repeat:no-repeat; background-size:cover; background-image:url("../../files/laptops-bg-min.jpg"); background-attachment:fixed; }
 
 @media all and (max-width:1024px) {
 	.section { padding:8rem 0; }
@@ -20,6 +21,6 @@
 @media all and (max-width:768px) {
 	.section { padding:4rem 0; }
 		.section-heading { margin-bottom:2.8rem; }
-		.lead-text { font-size:2.4rem; letter-spacing:.4rem; margin:3rem auto 4rem auto; }
+		.lead-text { font-size:2.4rem; margin:3rem auto 4rem auto; }
 
 }

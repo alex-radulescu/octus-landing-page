@@ -1,16 +1,14 @@
-// import 'babel-polyfill';
-// import 'whatwg-fetch';
-
 import { View } from './libs/as';
-import Utils from './libs/utils';
 import Header from './components/header';
 import DemoForm from './components/demo-form';
+import ImageLoader from './components/image-loader';
 
 class App extends View {
 	constructor(el) {
 		super(el);
 		Header.init();
 		DemoForm.init();
+		ImageLoader.init();
 	}
 }
 

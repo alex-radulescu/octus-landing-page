@@ -1,7 +1,7 @@
-.feature-list { background-position:center; background-repeat:no-repeat; background-size:cover; background-image:url("../../files/people-bg.jpg"); background-attachment:fixed; }
+.feature-list { background-position:center; background-repeat:no-repeat; background-size:cover; background-image:url("../../files/people-bg-min.jpg"); background-attachment:fixed; }
 	.feature-item { padding:2.4rem .8rem; box-sizing:border-box; position:relative; cursor:pointer; transition:background-color .3s; }
 	.feature-item:hover { background-color:#0F2634; }
-		.feature-icon { float:left; font-size:2.8rem; color:var(--red); margin-right:.8rem; }
+		.feature-icon { float:left; font-size:2.8rem; color:#D32F2F; margin-right:.8rem; }
 		.feature-title { color:#fff; font-size:1.8rem; margin-bottom:1.6rem; margin-top:.4rem; line-height:1.1; font-weight:500; }
 		.feature-text { color:#cdcdcd; font-size:1.4rem; margin-bottom:1rem; line-height:1.5; }
 

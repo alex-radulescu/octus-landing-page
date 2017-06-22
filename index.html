@@ -9,6 +9,8 @@
     <meta property="og:description" content="Octus is a smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.">
     <meta property="og:url" content="http://octus.com.sg/">
     <meta property="og:type" content="website"/>
+    <meta name="description" content="Octus is a smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.">
+
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,15 +51,16 @@
 	<header class="header is-invisible">
         <div class="container">
             <a class="logo" href="#intro">
-                <img class="logo-image" src="./files/octus-logo.png" role="presentation"/>
+                <img class="logo-image" src="./files/octus-logo.png" alt="Octus Cloud Recruitment Solution"/>
             </a>
             <section class="main-navigation">
                 <nav class="main-navigation-list">
-                    <a class="main-navigation-link" href="#about">About</a>
-                    <a class="main-navigation-link" href="#feature-list">Features</a>
-                    <a class="main-navigation-link" href="#testimonials">Testimonials</a>
-                    <a class="main-navigation-link" href="#demo">Demo</a>
-                    <a class="main-navigation-link" href="#contact">Contact</a>
+                    <a class="main-navigation-link is-internal" href="#about">About</a>
+                    <a class="main-navigation-link is-internal" href="#feature-list">Features</a>
+                    <a class="main-navigation-link is-internal" href="#testimonials">Testimonials</a>
+                    <a class="main-navigation-link is-internal" href="#demo">Demo</a>
+                    <a class="main-navigation-link is-internal" href="#contact">Contact</a>
+                    <a class="main-navigation-link" href="https://medium.com/octus">Blog</a>
                 </nav>
             </section>
             <button type="button" class="menu-toggle">
@@ -68,23 +71,18 @@
         </div>
 	</header>
 	
-    <section class="hero" id="intro">
+    <section class="hero image-loader" id="intro" data-source="./files/hero-bg.jpg">
         <div class="hero-content container is-small">
-            <img src="./files/octus-logo-white.png" role="presentation" class="hero-content-image"/>
+            <img src="./files/octus-logo-white.png" alt="Octus Cloud Recruitment Solution" class="hero-content-image"/>
             <h3 class="rectangular-sub-headline">Singapore / London / Hong Kong</h3>
             <form action="https://script.google.com/macros/s/AKfycbyYbVIu5epEOpwNVeA9IHa0Z47rHKX5E1tkxX3l43-MqA1Ho8y0/exec" class="get-demo-form">
                 <input type="email" name="email" class="input-field" required placeholder="Your email address"/>
-                <button class="submit-button">Get demo</button>
-                <div class="demo-benefits-list">
-                    <p class="demo-benefit">No set-up</p>
-                    <p class="demo-benefit">Free trial</p>
-                    <p class="demo-benefit">Cancel at any time</p>
-                </div>
+                <button class="submit-button">Request demo</button>
             </form>
         </div>
     </section>
     <section class="section container" id="about">
-        <h2 class="section-heading">Meet octus</h2>
+        <h2 class="section-heading">Meet the app</h2>
         <h1 class="lead-text">Octus is a smart, integrated and intuitive recruitment management software designed to make your life easier and your business more productive.</h1>
         <div class="grid with-gutter light-feature-list">
             <div class="box-third light-feature-item">
@@ -104,7 +102,7 @@
             </div>
         </div>
     </section>
-    <section class="section is-dark feature-list" id="feature-list">
+    <section class="section is-dark feature-list image-loader" data-source="./files/people-bg.jpg" id="feature-list">
         <div class="overlay"></div>
         <div class="container">
             <h2 class="section-heading">Features</h2>
@@ -162,27 +160,27 @@
 
     <section class="section container is-small" id="testimonials">
         <h2 class="section-heading">Tried and Trusted</h2>
-        <div class="testimonial-list">
-            <div class="testimonial">
-                <img src="./files/marek.jpg" alt="" class="testimonial-avatar"/>
+        <ul class="testimonial-list">
+            <li class="testimonial">
+                <img src="./files/marek.jpg" alt="Marek Danyluk" class="testimonial-avatar"/>
                 <h4 class="testimonial-position">Space executive</h4>
                 <p class="testimonial-text">"Octus is game changing software the recruitment market has been crying out for"</p>
                 <h3 class="testimonial-author">
                     <a href="WWW.SPACE-EXEC.COM" class="testimonial-author-link">MAREK DANYLUK / MANAGING DIRECTOR / WWW.SPACE-EXEC.COM</a>
                 </h3>
-            </div>
-            <div class="testimonial">
-                <img src="./files/chris.jpg" alt="" class="testimonial-avatar"/>
+            </li>
+            <li class="testimonial">
+                <img src="./files/chris.jpg" alt="Chris O'Brien" class="testimonial-avatar"/>
                 <h4 class="testimonial-position">BLACKSQUARE</h4>
                 <p class="testimonial-text">"Working with Octus has been refreshing. Octus is in tune to what is needed in today"</p>
                 <h3 class="testimonial-author">
                     <a href="WWW.BLACKSQUARE.CO.COM" class="testimonial-author-link">CHRIS O'BRIEN / MANAGING DIRECTOR / WWW.BLACKSQUARE.CO.COM</a>
                 </h3>
-            </div>
-        </div>
+            </li>
+        </ul>
     </section>
 
-    <section class="section is-dark demo-section align-children-center" id="demo">
+    <section class="section is-dark demo-section align-children-center image-loader" data-source="./files/laptops-bg.jpg" id="demo">
         <div class="overlay"></div>
         <div class="container is-small">
             <h2 class="section-heading">Interested to know more?</h2>
@@ -191,12 +189,7 @@
             </p>
             <form action="https://script.google.com/macros/s/AKfycbyYbVIu5epEOpwNVeA9IHa0Z47rHKX5E1tkxX3l43-MqA1Ho8y0/exec" class="get-demo-form">
                 <input type="email" class="input-field" required placeholder="Your email address"/>
-                <button class="submit-button">Get demo</button>
-                <div class="demo-benefits-list">
-                    <p class="demo-benefit">No set-up</p>
-                    <p class="demo-benefit">Free trial</p>
-                    <p class="demo-benefit">Cancel at any time</p>
-                </div>
+                <button class="submit-button">Request demo</button>
             </form>
         </div>
     </section>
@@ -243,6 +236,22 @@
         </div>
     </section>
 
+
+    <section class="section is-gray align-children-center">
+        <div class="container is-small">
+            <h2 class="section-heading">Partners</h2>
+            <p class="section-sub-heading">
+                <span class="section-sub-heading-text">We integrate with the best products on the market</span>
+            </p>
+            <div class="partner-list">
+                <a href="http://www.daxtra.com/" target="_blank" class="partner"></a>
+                <a href="https://www.volcanic.co.uk/" target="_blank" class="partner"></a>
+                <a href="https://www.broadbean.com/" target="_blank" class="partner"></a>
+                <a href="https://www.jxt.com.au/" target="_blank" class="partner"></a>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer section is-dark align-children-center">
         <div class="container">
             <div class="social-media">
@@ -250,11 +259,23 @@
                 <a href="https://twitter.com/OctusPteLtd" target="_blank" class="social-media-link icon-twitter"></a>
                 <a href="https://www.facebook.com/OctusPteLtd" target="_blank" class="social-media-link icon-facebook"></a>
             </div>
-            <p class="footer-text">© Copyright Octus PTE LTD 2013 - 2016 All rights reserved. octus.com.sg is a trading name of Octus PTE Limited, a company registered in Singapore. Registration number: 201409552D</p>
+            <p class="footer-text">© Copyright Octus PTE LTD 2013 - 2016 All rights reserved. octus.com.sg is a trading name of Octus PTE Limited, a company registered in Singapore.<br/>Registration number: 201409552D</p>
         </div>
     </footer>
 
-	
+    <div class="modal-overlay" id="demo-request-registered">
+        <div class="modal">
+            <h3 class="modal-title">We have received your request</h3>
+            <p class="modal-text">
+                We have received your email and we will contact you as soon as possible.<br/>
+                You will receive an email from one of our representatives within the next 24 hours. This is a real email, not an autogenerated one.<br/>
+                Also, your email address is safe. We will only use it to communicate with you and never sell it or use it to spam you.
+            </p>
+            <button type="button" class="modal-close"></button>
+        </div>
+    </div>
+
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	<script src="./dist/scripts/all.js"></script>
     <script id="__bs_script__">
         //<![CDATA[document.write("<script async src='http://HOST:3001/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));//]]>

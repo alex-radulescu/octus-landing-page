@@ -26,11 +26,11 @@ ___________________________________________*/
 	.is-menu-open .menu-line:nth-child(3) { transform:rotate(-45deg); background-color:#fff; left:1.4rem; }
 
 @media all and (max-width:768px) {
-	.main-navigation { position:fixed; top:0; bottom:0; transform:none; left:0; right:0; width:100%; z-index:1; visibility:hidden; opacity:0; background-color:rgba(20, 20, 20, .9); transition:visibility .35s, opacity .35s; }
+	.main-navigation { position:fixed; display:flex; justify-content:center; align-items:center; top:0; bottom:0; transform:none; left:0; right:0; width:100%; z-index:1; visibility:hidden; opacity:0; background-color:rgba(20, 20, 20, .9); transition:visibility .35s, opacity .35s; }
 	.is-menu-open .main-navigation { visibility:visible; opacity:1; }
-		.main-navigation-list { position:absolute; top:50%; right:0; transform:translateY(-50%); width:24rem; }
+		.main-navigation-list { flex-direction:column; text-align:center; }
 			.main-navigation-link,
-			.main-navigation-link:hover { color:#e0e0e0; font-weight:500; }
+			.main-navigation-link:hover { color:#e0e0e0; font-weight:500; font-size:1.6rem; }
 			.main-navigation-link:before,
 			.main-navigation-link.is-active:before { background-color:#fff; }
 			.main-navigation-link.is-active { color:#fff; font-weight:600; }

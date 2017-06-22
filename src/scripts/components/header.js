@@ -10,13 +10,13 @@ class Header extends View {
 		this.sections = {};
 
 		Array.prototype.forEach.call(section, e => {
-			this.sections[e.id] = e.offsetTop;
+			this.sections[e.id] = e.offsetTop - 65;
 		});
 
 		this.onWindowScroll();
 		this.addListener("click", ".menu-toggle", this.toggleMobileMenu.bind(this));
 		this.addListener("scroll", document, this.onWindowScroll.bind(this));
-		this.addListener("click", ".main-navigation-link", this.navigate.bind(this));
+		this.addListener("click", ".main-navigation-link.is-internal", this.navigate.bind(this));
 	}
 
 	onWindowScroll() {
@@ -43,11 +43,18 @@ class Header extends View {
 
 	navigate(e) {
 		e.preventDefault();
-		jump(e.target.getAttribute("href"));
+		jump(e.target.getAttribute("href"), {
+			offset: -65
+		});
+		this.closeMobileMenu();
 	}
 
 	toggleMobileMenu() {
 		this.el.classList.toggle("is-menu-open");
+	}
+
+	closeMobileMenu() {
+		this.el.classList.remove("is-menu-open");
 	}
 
 	static init(selector = ".header", base = document.body) {
