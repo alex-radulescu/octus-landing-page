@@ -63,3 +63,7 @@ ____________________________________*/
 }
 
 .is-hidden { display:none !important; }
+
+.old-ie-banner { display:none; background-color:#FFC107; padding:2.4rem; box-sizing:border-box; position:fixed; z-index:2; width:100%; }
+  .old-ie-text { font-size:16px; max-width:900px; width:90%; min-width:280px; line-height:1.4; margin:auto; text-align:center; }
+    .old-ie-text a { color:#D32F2F; }

@@ -1,0 +1,8 @@
+.partner-list { font-size:0; text-align:center; margin-top:7rem; }
+	.partner { width:14.5rem; height:6.5rem; margin-right:.8rem; margin-bottom:.8rem; display:inline-block; border-bottom:.8rem solid #e0e0e0; transition:background-color .25s, border-color .25s; background-repeat:no-repeat; background-position:center; background-size:contain; }
+	.partner:hover { background-color:#fff; border-bottom-color:#D32F2F; }
+	.partner:last-child { margin-right:0; }
+
+@media all and (max-width:768px) {
+	.partner-list { margin-top:3rem; }
+}

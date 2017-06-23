@@ -6,6 +6,7 @@ class Modal extends View {
 		super(el);
 
 		this.addListener('click', '.modal-close', this.closeModal.bind(this));
+		this.addListener('click', '.modal-ok', this.closeModal.bind(this));
 		this.addListener('click', '.modal-overlay', this.closeModalFromBackground.bind(this));
 	}
 

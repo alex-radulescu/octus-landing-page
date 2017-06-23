@@ -42,7 +42,7 @@ gulp.task('scripts', () => {
 	.bundle()
 	.pipe(source(config.scriptsName))
 	.pipe(buffer())
-	//.pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest(config.outputBase + config.scriptsOutput));
 });
 
@@ -65,6 +65,7 @@ gulp.task('css', (cb) => {
         .pipe(postcss([precss(), autoprefixer({ browsers: ["> 1%", "Firefox > 3", "ie > 7"] })]))
         .pipe(postcss([cssvariables({ preserve: true })]))
 		.pipe(gulpif(config.debug, sourcemaps.write()))
+		.pipe(cleanCSS())
 		.pipe(gulp.dest(config.outputBase + config.cssOutput))
 		.pipe(browserSync.stream());
 

@@ -3,6 +3,7 @@
 	.modal { background-color: #fff; padding: 2.4rem; border-radius: .2rem; position: relative; cursor: default; max-width: 45rem; min-width: 28rem; margin: 0 2rem; }
 		.modal-title { font-size: 2.4rem; margin-bottom: 2rem; }
 		.modal-text { font-size: 1.4rem; line-height: 1.4; color: #464646; }
+		.modal-ok { border: none; border-radius: 2px; height: 36px; line-height: 36px; padding: 0 2rem; text-transform: uppercase; font-size: 1.4rem; margin-top: 1.6rem; float: right; background-color: #1565c0; color: #fff; font-weight: 500; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2); }
 		.modal-close { background-color: transparent; border: none; position: absolute; width: 2rem; height: 2rem; right: -2rem; top: -2rem; cursor: pointer; }
 			.modal-close:before,
 			.modal-close:after { content:""; width:100%; height:.2rem; background-color:#fff; position:absolute; top:calc(50% - .1rem); left:0; transform:rotate(45deg); transform-origin: 50% 50%; }

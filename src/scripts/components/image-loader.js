@@ -26,8 +26,6 @@ class ImageLoader extends View {
 		this.el.style.backgroundImage = 'url(' + this.imageSource + ')';
 	}
 
-	
-
 	static init(selector = ".image-loader", base = document.body) {
 		Utils.query(base, selector).forEach(element => {	
 			new ImageLoader(element);
